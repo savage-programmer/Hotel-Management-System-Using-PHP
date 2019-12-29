@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manager</title>
+	<style>
+		.btn
+		{
+			  background-color: #253551;
+  			  border: none;
+  			  color: white;
+  			  padding: 10px 12px;
+  			  text-align: center;
+  			  text-decoration: none;
+  			  display: inline-block;
+  			  font-size: 16px;
+  			  border-radius: 10px;
+
+		}
+		.bodyclass
+		{
+			background-image: url(Picture/invoice.jpeg);
+			background-position: center;
+			background-attachment: fixed;
+			background-size: 1920px 1000px;
+			background-repeat: no-repeat;
+		}
+		.fontstyle
+		{
+			font-family: cursive;
+			font-size: 20px;
+			color: #E6EFFF;
+		}
+		input[type=text],[type=date]
+		{
+			width: 15%;
+  			padding: 12px 15px;
+  			margin: 4px 0;
+  			display: inline-block;
+  			border: 1px solid #ccc;
+  			border-radius: 4px;
+  			box-sizing: border-box;
+		}
+	    </style>
+</head>
+<body class="bodyclass">
+<center>
+<div class="fontstyle">
+<h1 style="background-color: #6178A2"><font style="color: #E6EFFF">Adding Invoice</font></h1>
+<h3 style="background-color: #8493AE"><font style="color: #E6EFFF">Enter Information</font></h3>
+<hr width="600">
+<form method="POST" action="action_addupdateinvoice.php">
+
+Invoice ID :
+<input type="text" name="Invoice_ID" placeholder="Enter! Invoice-ID" maxlength="20"><br><br>
+
+ Amount :
+<input type="text" name="Amount" placeholder="Enter! Amount" maxlength="20">
+<br><br>
+
+Manager ID :
+<input type="text" name="Mgr_ID" placeholder="Enter! Manager ID" maxlength="20"><br><br>
+
+Bill ID :
+<input type="text" name="Bill_ID" placeholder="Enter! Bill ID" maxlength="20"><br><br>
+
+
+
+<h4>Generation Date</h4><input type="date" name="DOB">
+
+</div>
+<hr width="600">
+<input type="submit" name="sub" class="btn" value="Submit">
+<input type="submit" name="clear" class="btn" value="Clear">
+</center>
+</form>
+</body>
+</html> 

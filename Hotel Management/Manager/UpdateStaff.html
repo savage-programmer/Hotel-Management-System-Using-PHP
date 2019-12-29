@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manager</title>
+	<style>
+		.btn
+		{
+			  background-color: brown;
+  			  border: none;
+  			  color: #FFE2B6;
+  			  padding: 10px 12px;
+  			  text-align: center;
+  			  text-decoration: none;
+  			  display: inline-block;
+  			  font-size: 16px;
+  			  border-radius: 10px;
+
+		}
+		.bodyclass
+		{
+			background-image: url(Picture/Staff.jpg);
+			background-position: center;
+			background-attachment: fixed;
+			background-size: 1900px 1000px;
+			background-repeat: no-repeat;
+		}
+		.fontstyle
+		{
+			font-family: cursive;
+			font-size: 20px;
+			color: brown;
+		}
+		input[type=text],[type=date]
+		{
+			width: 15%;
+  			padding: 12px 15px;
+  			margin: 4px 0;
+  			display: inline-block;
+  			border: 1px solid #ccc;
+  			border-radius: 4px;
+  			box-sizing: border-box;
+		}
+	    </style>
+</head>
+<body class="bodyclass">
+<center>
+<div class="fontstyle">
+<h1 style="background-color: #481F00"><font style="color: #FFE2B6">Updating Staff</font></h1>
+<h3 style="background-color: #FFE2B6"><font style="color: #481F00">Enter Information</font></h3>
+<hr width="600">
+<form method="POST" action="action_updatestaff.php">
+
+
+<font style="margin-right: 70px;">Staff ID :</font>
+<input type="text" name="Staff_Id" placeholder="Please : Enter Staff ID" maxlength="20"><br><br>
+
+
+<font style="margin-right: 70px;">Manager ID :</font>
+<input type="text" name="Mgr_ID" placeholder="Please : Enter Staff ID" maxlength="20"><br><br>
+
+
+<font style="margin-right: 70px;">FirstName :</font>
+<input type="text" name="First_Name" placeholder="Please : Enter First Name" maxlength="20"><br><br>
+
+ <font style="margin-right: 80px;">LastName :</font>
+<input type="text" name="Last_Name" placeholder="Please : Enter Last Name" maxlength="20">
+<br><br>
+
+<font style="margin-right: 100px;">Address :</font>
+<input type="text" name="Address" placeholder="Please : Enter Address">
+<br><br>
+
+<font style="margin-right: 80px;">Phone No. :</font>
+<input type="text" name="Phone" placeholder="Please : Enter Phone No."><br>
+
+<h4><font style="margin-right: 30px;">Gender</h4></font></font> 
+<font style="margin-left: 100px">Male : <input type="radio" name="Gender" value="Male"> 
+Female : <input type="radio" name="Gender" value="Female">
+<br>
+
+<h4><font style="margin-left: 35px">Date of Birth</font></h4>
+<input style="margin-left: 190px" type="date" name="DOB">
+</div>
+<hr width="600">
+<input type="submit" name="Update" class="btn" value="Submit">
+<input type="submit" name="clear" class="btn" value="Clear">
+</center>
+</form>
+</body>
+</html>

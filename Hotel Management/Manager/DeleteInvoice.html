@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body, html {
+  height: 100%;
+  font-family: calligraphy;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+
+  background-image: url("Picture/invoice.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 950px;
+}
+
+
+.signinbox {
+	color: #00357E; 
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 780px;
+  max-width: 310px;
+  padding: 16px;
+  background-color: #D7E8FF;
+}
+
+
+input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #F2F8FF;
+}
+
+input[type=text]:focus {
+  background-color: #A2CCFF;
+  outline: none;
+}
+
+
+.button 
+{
+  	display: inline-block;
+  	border-radius: 4px;
+  	background-color: #D7E8FF;
+  	border: none;
+  	color: #00357E;
+  	text-align: center;
+  	font-size: 18px;
+  	padding: 10px;
+  	width: 130px;
+  	transition: all 0.5s;
+  	cursor: pointer;
+  	margin: -8px;
+}
+
+.button span 
+{
+  	cursor: pointer;
+  	display: inline-block;
+ 	position: relative;
+ 	transition: 0.5s;
+}
+
+.button span:after 
+{
+  	content: '\00bb';
+  	position: absolute;
+ 	opacity: 0;
+  	top: 0;
+  	right: -20px;
+  	transition: 0.5s;
+}
+
+.button:hover span
+{
+  	padding-right: 25px;
+}
+
+.button:hover span:after
+ {
+ 	 opacity: 1;
+  	right: 0;
+   }
+</style>
+</head>
+<body>
+
+<div class="bg-img">
+  <form class="signinbox" method="POST" action="action_delviewinvoice.php">
+    <h1>Deleting Invoices</h1>
+
+    <label for="InvoiceID"><b>Invoice-ID</b></label>
+    <input type="text" placeholder="Enter Invoice-ID" name="Invoice_ID">
+	<br>
+	<input type="submit" value="DELETE" class="button" name="del"> 
+
+  </form>
+</div>
+
+</body>
+</html>

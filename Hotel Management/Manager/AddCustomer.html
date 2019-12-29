@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manager</title>
+	<style>
+		.btn
+		{
+			  background-color: brown;
+  			  border: none;
+  			  color: #FFEFD4;
+  			  padding: 10px 12px;
+  			  text-align: center;
+  			  text-decoration: none;
+  			  display: inline-block;
+  			  font-size: 16px;
+  			  border-radius: 10px;
+
+		}
+		.bodyclass
+		{
+			background-image: url(Picture/imag1.jpg);
+			background-position: center;
+			background-attachment: fixed;
+			background-size: 1900px 1000px;
+			background-repeat: no-repeat;
+		}
+		.fontstyle
+		{
+			font-family: cursive;
+			font-size: 20px;
+			color: #FFEFD4;
+		}
+		input[type=text]
+		{
+			width: 15%;
+  			padding: 12px 15px;
+  			margin: 4px 0;
+  			display: inline-block;
+  			border: 1px solid #ccc;
+  			border-radius: 4px;
+  			box-sizing: border-box;
+		}
+    </style>
+</head>
+<body class="bodyclass">
+<center>
+<div class="fontstyle">
+<h1 style="background-color: #481F00"><font style="color:  #FFE2B6">Adding Customer</font></h1>
+<h3 style="background-color:  #FFE2B6"><font style="color: #481F00">Creating An Account</font></h3>
+<hr width="600">
+<form method="POST" action="action_addupdatecustomer.php">
+<font style="margin-right: 120px;">CNIC :</font>
+<input type="text" name="cnic" placeholder="Please : Enter CNIC" maxlength="13"><br><br>
+
+<font style="margin-right: 70px;">FirstName :</font>
+<input type="text" name="First_Name" placeholder="Please : Enter First Name" maxlength="20"><br><br>
+
+ <font style="margin-right: 80px;">LastName :</font>
+<input type="text" name="Last_Name" placeholder="Please : Enter Last Name" maxlength="20">
+<br><br>
+
+<font style="margin-right: 60px;">No.of People :</font>
+<input type="text" name="No_of_People" placeholder="Enter : Number Of People">
+<br><br>
+
+<font style="margin-right: 100px;">Address :</font>
+<input type="text" name="Address" placeholder="Please : Enter Address">
+<br><br>
+
+<font style="margin-right: 85px;">Phone No. :</font>
+<input type="text" name="Phone" placeholder="Please : Enter Phone No."><br>
+</div>
+<hr width="600">
+<input type="submit" name="sub" class="btn" value="Submit">
+<input type="submit" name="clear" class="btn" value="Clear">
+</center>
+</form>
+</body>
+</html>
